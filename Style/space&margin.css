@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+.font-padding{font-family:gothan;color:#fff; padding-top:20px;}
+.font-padding2{text-align:center; font-family:gothan medium; color:#494949; padding-top:10px;}
+.margin-top{padding-top:80px;}
+.padding-top{margin-top:80px;}
+.auto-width-height{width:auto; height:auto;}
+.font-padding3{padding-left:20px;font-family:gothan bold; color:#eb6c64;}
+.font-padding4{padding-left:20px;font-family:gothan book;}
+.font-padding5{text-align:left; max-width:1260px; font-family:gothan book; margin-top:0px; line-height:30px;}
+.fluid-width{width:100%; max-width:60px; height:auto; min-height:38px;}
+.font-use{font-family:gothan medium; cursor:pointer;}
+.font-bold{color:#eb6c64; font-family:gothan bold; text-align:center; float:none;}
+.font-normal{color:#494949; font-family:gothan book; text-align:center; float:none;}
+

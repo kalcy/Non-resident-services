@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Payment Screen</title>
+<link href="Style/notes.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(e) {
+$(window).resize(function(e) {
+if($(window).width() < 945){
+	$('.dis').hide();
+	$('.dis1').hide();
+	$('.dis2').hide();
+	$('.dis3').hide();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').slideDown();
+});
+$('.dis-1').click(function(e) {
+    $('.dis').slideUp();
+	$('.dis1').slideUp();
+	$('.dis2').slideUp();
+	$('.dis3').slideUp();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+});
+	}
+if($(window).width() > 945){
+	$('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').hide();
+}
+});
+if($(window).width() < 945){
+	$('.dis').hide();
+	$('.dis1').hide();
+	$('.dis2').hide();
+	$('.dis3').hide();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.display-settings').click(function(e) {
+    $('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.dis-1').click(function(e) {
+    $('.dis').slideUp();
+	$('.dis1').slideUp();
+	$('.dis2').slideUp();
+	$('.dis3').slideUp();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+});
+	}
+if($(window).width() > 945){
+	$('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').hide();
+}
+});
+
+
+</script>
+</head>
+
+<body>
+<header id="header" style="margin-top:0px;">
+<div class="container">
+<div class="equal-alignment">
+<a href="index.html"><img src="images/logo.png" alt="logo" class="logo"/></a>
+<nav class="nav">
+<ul>
+<div class="main-nav">
+<li class="dis0"><img src="images/nav-icon.png" class="display-settings"/><span class="dis-1"> x </span></li>
+<li class="dis1"><h2 style="font-family:gothan book; color:#494949; float:right; padding-top:0px;" class="head-text">Hello, Madhvan233@gmail.com</h2><li>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+</header><br />
+<br />
+<center>
+<p style="color:#494949; font-family:gothan book; font-size:45px;">Leftlane.in</p>
+<img src="images/logo.png" style="width:100%; max-width:151px; min-height:47px;" /><br /><br />
+<br />
+<p style="color:#494949; font-family:gothan book; font-size:20px;">amount:  &nbsp;$25</p>
+<button style="width:100%; max-width:192px; min-height:40px; font-family:gothan book; color:#fff; height:auto; background-color:#eb6c63; border:none; border-radius:15px; cursor:pointer;">Pay with Card</button><br /><br />
+<button style="width:100%; max-width:192px; min-height:40px; font-family:gothan book; color:#fff; height:auto; background-color:#494949; border:none; border-radius:15px; cursor:pointer;">Checkout with PAYPAL</button>
+</center>
+</body>
+</html>
+ 

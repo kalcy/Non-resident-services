@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Index</title>
+<link href="Style/Style.css" rel="stylesheet" type="text/css">
+<!-- Desktop -->
+<link href="Style/1064px layout.css" rel="stylesheet" type="text/css" />
+<link href="js/mobile-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="Style/image+setting.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="Style/760-image setting.css"/>
+<link href="Style/space&margin.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(e) {
+	$(function() {
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 2000);
+        return false;
+      }
+    }
+  });
+});
+$(window).bind('scroll', function() {
+ var navHeightnew = $('body').height() - -32 ;
+if ($(window).scrollTop() > navHeightnew ) {
+$('.nav ul li a').addClass('active');
+$('.dis a').css('color','494949');
+$('.dis a').removeClass('active');
+}
+else {
+$('.nav ul li a').removeClass('active');
+}
+});
+$(window).bind('scroll', function() {
+   var navHeight = $( window ).height() - -3000;
+if ($(window).scrollTop() > navHeight) {
+$('.dis a').addClass('active');
+$('.dis1 a').css('color','494949');
+$('.dis1 a').removeClass('active');
+}
+});
+$(window).bind('scroll', function() {
+   var navHeight = $( window ).height() - -3000;
+if ($(window).scrollTop() < navHeight) {
+$('.dis1 a').addClass('active');
+$('.dis a').css('color','494949');
+$('.dis a').removeClass('active');
+}
+});
+$(window).bind('scroll', function() {
+   var navHeight = $( window ).height() - -32;
+if ($(window).scrollTop() < navHeight) {
+$('.dis1 a').removeClass('active');
+$('.dis a').css('color','494949');
+$('.dis a').removeClass('active');
+}
+});
+if($(window).width() > 480 ){
+$(window).bind('scroll', function() {
+if ($(window).scrollTop() > 10) {
+	$('header').css('height','63px');
+	$('header').css('-webkit-transition',' all 0.4s ease-out ');
+	$('header').css('transition','all 0.4s ease-out  ');
+	$('header').css('-moz-transition',' all 0.4s ease-out  ');
+	$('header').css('position','fixed');
+	if($(window).width() > 480){
+	if($('header').css('min-height','63px')){
+	$('.nav').css('margin-top','0px');
+	$('.logo').css('margin-top','0px');
+	}else{
+			$('.nav').css('margin-top','0px');
+			$('.logo').css('margin-top','0px');
+	}
+	}
+}
+else{
+	$('header').css('min-height','63px');
+	$('header').css('-webkit-transition',' all 0.4s ease-out ');
+	$('header').css('transition','all 0.4s ease-out  ');
+	$('header').css('-moz-transition',' all 0.4s ease-out  ');
+				$('.nav').css('margin-top','0px');
+                $('.logo').css('margin-top','0px');
+	$('header').css('position', 'fixed');
+}
+});
+}else{
+	$('header').css('min-height','63px');
+	}
+    $('#imm1').hide();
+	$('#imm3').hide();
+	$(window).resize(function(){
+	if($(window).width() < 945){
+		$('#imm1').show();
+		$('#imm').hide();
+		$('#imm3').show();
+		$('#imm2').hide();
+	}
+if($(window).width() > 945){
+		$('#imm1').hide();
+		$('#imm').show();
+		$('#imm3').hide();
+		$('#imm2').show();
+		}
+	});
+    $('#imm1').hide();
+	$('#imm3').hide();
+		if($(window).width() < 945){
+		$('#imm1').show();
+		$('#imm').hide();
+		$('#imm3').show();
+		$('#imm2').hide();
+	}
+$(window).resize(function(e) {
+ 
+if($(window).width() > 945){
+		$('#imm1').hide();
+		$('#imm').show();
+		$('#imm3').hide();
+		$('#imm2').show();
+		}
+});
+$(window).resize(function(e) {
+if($(window).width() < 945){
+	$('.dis').hide();
+	$('.dis1').hide();
+	$('.dis2').hide();
+	$('.dis3').hide();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').slideDown();
+});
+$('.dis-1').click(function(e) {
+    $('.dis').slideUp();
+	$('.dis1').slideUp();
+	$('.dis2').slideUp();
+	$('.dis3').slideUp();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+});
+	}
+if($(window).width() > 945){
+	$('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').hide();
+}
+});
+if($(window).width() < 945){
+	$('.dis').hide();
+	$('.dis1').hide();
+	$('.dis2').hide();
+	$('.dis3').hide();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.display-settings').click(function(e) {
+    $('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.dis-1').click(function(e) {
+    $('.dis').slideUp();
+	$('.dis1').slideUp();
+	$('.dis2').slideUp();
+	$('.dis3').slideUp();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+});
+	}
+if($(window).width() > 945){
+	$('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').hide();
+}
+$('.dis2').click(function(e) {
+	var url = "#sign-in";    
+$(location).attr('href',url);
+});
+$('.new-user').click(function(e) {
+	var url = "#new-user";    
+$(location).attr('href',url);
+});
+$('.forgot').click(function(e) {
+	var url = "#forgot";    
+$(location).attr('href',url);
+});
+if($(window).width() > 480 ){
+$('.button').hide();
+$(window).bind('scroll', function() {
+ if ($(window).scrollTop() > 200) {
+	 $('.button').show();
+ }else{
+	 $('.button').hide();
+	 }
+});
+}
+});
+</script>
+</head>
+
+<body>
+        <header class="header">
+      <div class="container">
+  <a href="index.htmt"><img src="images/logo.png" alt="logo" class="logo"/></a>
+   <nav class="nav">
+     <ul class="mobile-height">
+        <div class="main-nav">
+              <li class="dis0"><img src="images/nav-icon.png" class="display-settings" title="Close"/><span class="dis-1"> x </span></li>
+            <li class="dis1"><a href="#Services" title="Our Services">Our Services</a></li>
+        <li class="dis"><a href="#Work" title="How it Works">How it Works</a></li>
+      <li class="dis2"><span class="font-use" title="Sign-In">Sign In</span></li>
+  <li class="dis3"><button  class="button" class="height"type="submit" onclick="window.location.href='jobs.html'" title="Get Started">Get Started</li></button>
+    </div>
+        </ul>
+            </nav>
+                </div>
+              </header>
+            <div id="sign-in" class="sing-in-dailoge">
+	     <div>
+    	<a href="#close" title="Close" class="close">X</a>
+<div class="container-modal-box">
+   <h1 class="font-bold">Welcome Back! </h1><br>
+    <form action="welcome.html">
+       <input type="email" name="email" placeholder="  Email Address" class="email"/><br>
+          <input type="password" name="password" placeholder="  Password" class="password"/><br><br><br>
+
+  <button class="mo-st">Sign-in</button><br>
+    </form>
+      <a href="#new-user" class="a new-user">New-User</a> </span><p>|</p> <a href="#forgot" class="a forgot">Forgot Password</a></span>
+           </div>
+                 </div>
+                      </div>
+                            <div id="new-user" class="new-user-dailoge">
+	                         <div>
+		                        <a href="#close" title="Close" class="close">X</a>
+	                     	<div class="container-modal-box">
+                        <h1 class="font-bold">Welcome Aboard! </h1><br>
+                      <form action="#">
+                     <input type="email" name="email" placeholder="  Email Address" class="email"/><br>
+                   <input type="password" name="email" placeholder=" Password" class="password"/><br>
+              <input type="password" name="password" placeholder="  Confirm Password" class="password"/><br><br><br>
+
+ <button class="mo-st">Sign-in</button><br><br>
+  </form>
+      </div>
+          </div>
+                 </div>
+                        <div id="forgot" class="forgot-dailoge">
+	                  <div>
+		                   <a href="#close" title="Close" class="close">X</a>
+		               <div class="container-modal-box">
+                     <p class="font-normal"><em>New Password will be Emailed to you</em></p><br>
+                   <form action="#">
+                  <input type="email" name="email" placeholder="  Email Address" class="email"/><br><br><br>
+
+               <button class="mo-st">Reset Password</button><br>
+            </form>
+       </div>
+     </div>
+ </div>
+            <div class="fixed-container">
+                <div class="image">
+                    <div class="container1">
+                       <div class="image-box manage-mobile-width">
+                          <h1 class="image-box-heading font-padding">GET THINGS DONE IN  INDIA</h1>
+                              <p class="Nri-too mobile-collaspe-width">We are NRIs too. We understand your needs and we understand India. Anything you need to                                 get done - all it takes is an SMS or an email. We are here to help.</p>
+                                    </div>
+                                       <div class="start-right-away">
+                                          <h3 class="new-font font-padding2">Get Started Rignt Away !</h2>
+                                                 <center>
+                                                     <input type="email" name="email" placeholder="  Email Address" class="input"/>
+                                                          <button class="mobile-seting" onclick="window.location.href='jobs.html'">Get Started</button>
+                                                </center>
+                                            </div>
+                                        </div>
+                                  </div>
+  <div class="manage-width-of-mobile">
+<!--This is all use For Print and Ship Services -->
+<div id="Services" class="margin-top">
+  <div class="container"><!--This class is use for equal width  -->
+    <h1 class="what-to-do-for-you">WHAT CAN WE DO FOR YOU?</h1><br>
+       <div class="print-and-ship-right-text" style="font-family:gothan book;">Anything that a friend or a relamobile-center-aligntive can help you with in your city!</div>
+<div class="container-for-print-and-ship">
+<single class="mobile-collaspe"><img src="images/circule.png" alt="Print and Ship" class="circule mobile-set left-margin"/></single>
+<div class="print-and-ship-left-peragraph for-center"><span style="font-family:gothan bold; color:#eb6c64;"class="font-18px">Print And Ship
+</span><br> 
+<div class="for-left">
+Send a link to the digital copies of your documents or photos, we will print them and ship it to your address in India. It is that simple. Total charges = actual printing cost +  starting at Rs 300/- service charge + lowest shipping cost. Hit us with a question if you would                           like to know more about this service </div><br><br>
+<button onclick="window.location.href='jobs.html'">Get Started</button><br><br>
+</div>
+</div>
+<!--Here is Closing of print and ship Services -->
+
+
+<!--Here is Starting of Legal Services-->
+<div class="container-for-legal-services">
+                           <!--this class is use for align the image to right side-->
+<aside class="mobile-collaspe-right"><img src="images/circule2.png" alt="Legel Services" class="circule mobile-set1 right-margin for-right-image"/></aside>
+                      <!--close this class here-->
+<div class="legal-services-right-peragraph for-center"> <span style=" font-family:gothan bold; color:#eb6c64;" class="mobile-center-align font-18px">
+Legal Services</span><br> 
+<div class="for-left">
+We manage the end-to-end completion of your legal requirement, be it buying/selling real estate, estate planning etc., . All services are managed through a well qualifie dattorney.You get to know the full costs and breakdown before you
+move forward with us. Hit us with a question if you would like to know more about this service.
+         </div><br><br>
+      <button onclick="window.location.href='jobs.html'">Get Started</button><br><br>
+  </div>
+</div>
+<!-- Here is closing of legala service !-->
+
+<!--Here is starting of Pybills-->
+
+                  <div class="container-for-pickup-and-ship">
+                    <!--this class is use for left align image -->
+                       <span class="mobile-collaspe"><img src="images/Untitled-1.png" alt="Pick-up and Ship" class="circule mobile-set left-margin"/></span>
+                          <!--Closing-->
+                         <div class="pay-bills-right-peragraph for-center"> <span style=" font-family:gothan bold; color:#eb6c64;" 
+                         class="pay-mobile-center-align font-18px">Pay Bills
+                                </span><br> 
+                                <div class="for-left">
+                                Paying utility or other bills. Our charges are Rs 300/- to 500/- depending on the payment location.Hit us with a                                    question if you would like to know more about this service.
+                                </div>
+                                 <br><br>
+                                   <button onclick="window.location.href='jobs.html'">Get Started</button><br><br>
+                                      </div>
+                                         </div>
+                                          <!--closing of starting paybills-->
+                                
+                          <!--sarting of pick-up and ship services -->
+                      <div class="container-for-pick-and-ship">
+                  <aside class="mobile-collaspe-right"><img src="images/circule3.png" alt="Pick-up and Ship" class="circule mobile-set1 right-margin for-right-image"/></aside>
+            <div class="pick-and-ship-services-right-peragraph for-center"><span style=" font-family:gothan bold; color:#eb6c64;" class="mobile-center-align font-18px">Pick Up And Ship</span><br> 
+            <div class="for-left">
+            SWe pickup the item from your address and ship it to your address in the USA, through your choice of shipping company or the one                we vetted out.You get to know the full costs and breakdown before you move forward with us. Hit us with a question if you would like to know                    more about this service.
+ </div> <br><br>
+<button onclick="window.location.href='jobs.html'">Get Started</button><br><br>
+   </div>
+      </div>
+          <!--closing of pick-ip and ship services -->
+<!--starting  of taxations-->
+     <div class="texation-container">
+        <span class="mobile-collaspe"><img src="images/circule4.png" alt="Tax" class="circule mobile-set left-margin"/></span>
+            <div class="texation-right-services-peragraph for-center"><span style=" font-family:gothan bold; color:#eb6c64;" class="pay-mobile-center-align font-18px">Taxation</span><br>               
+           <div class="for-left">
+            Whether it is following up an audit or filing taxes our tax experts can take care of it.Fee start at Rs 200/-.Hit us with a question if you                    would like to know more about this service.</div><br><br>
+                       <button onclick="window.location.href='jobs.html'">Get Started</button><br><br>
+                         </div>
+                             </div>
+
+<!--closing of taxations-->
+<!--starting of medical service-->
+
+             <div class="container-for-medical-services">
+      <aside class="mobile-collaspe-right"><img src="images/circule5.png" alt="Meedical Services" class="circule mobile-set1 right-margin for-right-image"/></aside>
+        <div class="medical-services-first-version for-center"><span style=" font-family:gothan bold; color:#eb6c64;" class="mobile-center-align font-18px">Medical services</span><br>
+        <div class="for-left">
+            <h5>Medical services with transportation Medical</h5>
+               <span style="color:#eb6c64;">&raquo; </span>First off we give you the best price quote for the diagnostics or other hospital service and you are        happy with the price and would like to move forward<br>
+   <span style="color:#eb6c64;">&raquo; </span>schedule an appointment working both the hospital and you<br>
+
+          <span style="color:#eb6c64;">&raquo; </span>inform approximate duration for the medical service<br>
+               <span style="color:#eb6c64;">&raquo; </span>pick you up at your place<br>
+                   <span style="color:#eb6c64;">&raquo; </span>get the medical service done at the hospital with no waiting in line<br>
+                        <span style="color:#eb6c64;">&raquo; </span>we take care of the payment. ZERO hassle for you.<br>
+                            <span style="color:#eb6c64;">&raquo; </span> drop you off at your place.
+                    </div> <br> 
+                               <button onclick="window.location.href='jobs.html'">Get Started</button>
+                 </div>
+                 <div class="for-left">
+                       <div class="medical-services-second-version"><br>
+              <h5>Medical services without transportation Medical</h5>
+        <span style="color:#eb6c64;">&raquo; </span>First off we give you the best price quote for the diagnostics or other hospital service and you are happy     with the price and would like to move forward.<br>
+  <span style="color:#eb6c64;">&raquo; </span>schedule an appointment working both the hospital and you
+           inform approximate duration for the medical service<br>
+
+                <span style="color:#eb6c64;">&raquo; </span>Meet you at the hospital entrance<br>
+        <span style="color:#eb6c64;">&raquo; </span>get the medical service done at the hospital with no waiting in line<br>
+     <span style="color:#eb6c64;">&raquo; </span>we take care of the payment. ZERO hassle for you.<br>
+  <span style="color:#eb6c64;">&raquo; </span>Walk you out You get to know the full costs and <br>
+ <span style="color:#eb6c64;">&raquo; </span>breakdown before you move forward with us. Hit us with a question if you would like to know more about this service
+     </div>
+          </div>
+            </div>
+              </div>
+                   </div>
+<!--closing of medical services-->
+<!--Starting of three processes-->
+       <div id="Work" style="padding-top:10px;">
+           <div class="container" style="margin-top:80px;">
+             <div class="margin-right">
+               <h1 class="how-it-work">HOW DOES IT WORK?</h1><br>
+                   <div class="text-align">It’s a simple three-step process!</div>
+             <div class="first-Process">
+          <img src="images/try.png" style="width:auto; height:auto;" id="imm" class="first-process-image"/><img src="images/new-image.png" id="imm1" class="first-process-image-new-one auto-width-height"/>
+   <p style="" class="tell">Tell us what you would
+          like us to do.
+             We will get in touch 
+                 and understand the
+                    task in detail
+    </p>
+</div>
+            <div class="second-Process">
+               <img src="images/2nd-step.png" id="imm2" class="second-process-image auto-width-height"/>
+                   <img src="images/new-image2.png" id="imm3" class="second-process-image-new-two"/>
+                        <p style="" class="payment">Make a payment to us
+                           using one of a multitude
+                               of options available 
+                                   with us.
+           
+   </p>
+</div>
+              <div class="third-Process">
+                   <img src="images/1st-step.png"  class="third-image auto-width-height"/>
+                       <p style="" class="relax">That’s it! Relax
+                            while we work for you. 
+                                  You can keep checking 
+                                        in to see and discuss 
+                                             the progress.
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                   </div>
+             <!--closing of processes-->
+    
+  <!--Strating of about us-->
+<div class="container padding-top container-for-padding">
+<h1 style="font-family:gothan bold; color:#eb6c64;" class="mobile-about-us-settings">About-us</h1><br>
+<p style="text-align:justify; max-width:1260px; font-family:gothan book; margin-top:0px; line-height:30px;" class="mobile-about-us-font-settings">
+We are a bunch of friends living in the USA, UK, Germany, France and UAE for the past 15 years. We come from different parts of the country. We all still have very strong ties to India be it family, relatives, friends, businesses, lands, houses and apartments. Living thousands of miles away and taking care of near and dear and managing assets requires significant time and effort. Over the years we managed to build a network of friends and local professionals across India to take care of our needs, both personal and professional. Non Resident Services is our attempt to extend the same network to you all NRIs and help you navigate India in a way you expect living abroad.
+</p>
+<h3 class="mobile-heading-settings font-padding3 adjustment">How is this different? or Why should I use you? you ask!.</h3>
+<h3 class="mobile-heading-settings font-padding4  adjustment">There are 3 things we are bringing to the table</h3>
+<p class="mobile-heading-settings font-padding5">
+1. The most simplest way to get started. You can contact us day or night through an SMS or email*.<br><br>
+
+2. Clear Pricing : You get to see the cost of every service before you move forward. If there is one thing very difficult to navigate in India is inflated prices. With us, you know it in advance and pay it in advance. You are free to check prices around and come to us only when you feel the price is right.<br><br>
+
+3. Reliable Time Estimates & 100% satisfaction guarantee. All services are done as if we are doing it for ourselves, be it finding the right price, keeping you posted on the status, completing it within a promised timeline.<br><br>
+
+4. We know you want a full website to post and manage your service requests as well. It is there, you just get started and we will surprise you with what it looks like.</p>
+<!--closing of about-us-->
+<!--starting of Footer-->
+<div class="footer">
+<center>
+<div>
+<nav class="nav-footer">
+<ul>
+<li><a href="#">Term Of Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</nav>
+</div>
+</center>
+<div class="footer-cont">
+<div class="footer-accept">
+<div class="social-icons-mobile">
+<h3 style="font-family:gothan medium; color:#fff">More About us</h3>
+<a href="#"><img src="images/facebook.png" alt="face-book" class="pointer" title="Find more info on Facebook"/></a>
+<a href="#"><img src="images/google++.png" alt="google++" class="pointer1" title="Find more info on Google+"/></a>
+<a href="#"><img src="images/twitter.png" alt="twitter" class="pointer2" title="Find more info on Twitter" /></a>
+</div>
+<div class="social-icons">
+<div class="mobile-accept">
+<h3 style="font-family:gothan medium; color:#fff;" class="left">We Accept and credit cards</h3>
+<img src="images/visa.png" alt="visa" class="align fluid-width" title="Visa"/>
+<img src="images/discover.png" alt="discover" class="fluid-width" title="Discover"/>
+<img src="images/american.png" alt="american" class="fluid-width" title="American"/>
+<img src="images/master.png" alt="master"  class="align-new-four fluid-width" title="Master"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--ending of site and footer-->
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Welcome</title>
+<link href="Style/notes.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(e) {
+$(window).resize(function(e) {
+if($(window).width() < 945){
+	$('.dis').hide();
+	$('.dis1').hide();
+	$('.dis2').hide();
+	$('.dis3').hide();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').slideDown();
+});
+$('.dis-1').click(function(e) {
+    $('.dis').slideUp();
+	$('.dis1').slideUp();
+	$('.dis2').slideUp();
+	$('.dis3').slideUp();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+});
+	}
+if($(window).width() > 945){
+	$('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').hide();
+}
+});
+if($(window).width() < 945){
+	$('.dis').hide();
+	$('.dis1').hide();
+	$('.dis2').hide();
+	$('.dis3').hide();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+$('.display-settings').click(function(e) {
+    $('.dis').slideDown();
+	$('.dis1').slideDown();
+	$('.dis2').slideDown();
+	$('.dis3').slideDown();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.display-settings').click(function(e) {
+    $('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').show();
+});
+$('.dis-1').click(function(e) {
+    $('.dis').slideUp();
+	$('.dis1').slideUp();
+	$('.dis2').slideUp();
+	$('.dis3').slideUp();
+	$('.display-settings').show();
+	$('.dis-1').hide();
+});
+	}
+if($(window).width() > 945){
+	$('.dis').show();
+	$('.dis1').show();
+	$('.dis2').show();
+	$('.dis3').show();
+	$('.display-settings').hide();
+	$('.dis-1').hide();
+}
+});
+</script>
+</head>
+
+<body>
+<header>
+<div class="container">
+<div class="equal-alignment">
+<a href="index.html"><img src="images/logo.png" alt="logo" class="logo"/></a>
+<nav class="nav">
+<ul>
+<div class="main-nav">
+<li class="dis0"><img src="images/nav-icon.png" class="display-settings"/><span class="dis-1"> x </span></li>
+<li class="dis1"><h2 style="font-family:gothan book; color:#494949; float:right; padding-top:0px;" class="head-text">Hello, Madhvan233@gmail.com</h2><li>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div class="container">
+<button class="button-new btt" style="">New Job </button>
+</div>
+<div class="container">
+<center>
+<img src="images/new-job-backgrounf.png" style="width:100%; max-width:635px; height:auto;" class="h">
+<h1 style="font-family:gothan bold; color:#eb6c64; padding-left:20px; display:block;" class="h1">Hello And Welcome</h1>
+<p style="font-family:gothan book; line-height:30px; color:#494949;display:block;" class="width">
+Lets Begin ! Tell Us What would you Like Us to Do today
+Simply Click on This  <span style="color:#eb6c64; font-family:gothan book;">New Tab</span> button and enter a quick 
+Description. We will take a look and immediately get In
+touch with you to talk more about it. 
+</p>
+</center>
+</div>
+</body>
+</html>
