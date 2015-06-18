@@ -113,19 +113,15 @@
 	.footer-cont {
 		float: left;
 	}
-	.footer-accept {
-		width: 100%;
-		max-width: 100%;
-		float: right;
-	}
+
 	.social-icons {
-		max-width: 100%;
-		margin-top: 10px;
-		margin-right: 132px;
-		display: inline-block;
-		width: 100%;
-		max-width: 100%;
-		float: right;
+		float:left;
+		padding:0px 5%;
+	}
+	.payment-accept {
+		float:left;
+		padding:0px 5%;
+		width:300px;
 	}
 	.footer {
 		min-height: 320px;
@@ -134,13 +130,17 @@
 		margin-top: 0px;
 	}
 	.nav-footer {
-		width: 100%;
-		margin-left: -190px;
 		max-width: 300px;
-		height: auto;
-		padding-top: 20px;
-		text-align: center;
 	}
+	
+	.nav-footer ul{
+		margin-left:-30px;
+	}
+	
+	.nav-footer ul li {
+	padding-right: 150px;
+	}
+	
 	.image-box-heading {
 		font-size: 20px;
 	}
@@ -180,8 +180,8 @@
 		margin-left: 0px;
 	}
 	.mobile-seting {
-		width: 127px;
-		height: 34px;
+		width: 100px;
+		height: 30px;
 		font-size: 15px;
 		margin-top: -20px;
 	}
@@ -318,11 +318,12 @@
 		margin-top: 100px;
 	}
 	.mobile-seting {
-		width: 127px;
+		width: 100px;
 		min-height: 24px;
 		font-size: 12px;
 		margin-top: 0px;
 		margin-left: 0px;
+		vertical-align: -webkit-baseline-middle;
 	}
 	.tell {
 		margin: 0px;
@@ -499,7 +500,7 @@
 		font-size: 15px;
 	}
 	.font-18px {
-		margin-left: 18px;
+		/*margin-left: 18px;*/
 		font-size: 18px;
 	}
 	.text-align {

@@ -320,7 +320,7 @@ section {
 	min-height: 364px;
 }
 .medical-services-first-version {
-	max-width: 371px;
+	max-width: 640px;
 	float: left;
 	line-height: 24px;
 	padding-top: 10px;
@@ -374,9 +374,12 @@ section {
 	min-height: 220px;
 	background-color: #494949;
 }
+.ftr-links{
+	text-align:center;
+}
 .nav-footer {
 	width: 100%;
-	max-width: 750px;
+	max-width: 800px;
 	height: auto;
 	padding-right: 20px;
 	padding-top: 20px;
@@ -388,7 +391,7 @@ section {
 }
 .nav-footer ul li {
 	float: left;
-	padding-left: 76px;
+	padding-right: 80px;
 }
 .nav-footer ul li a {
 	display: block;
@@ -397,20 +400,18 @@ section {
 	text-decoration: none;
 }
 .footer-cont {
-	width: 50%;
-	padding-left: 20px;
-	margin: 0px auto;
-}
-.footer-accept {
 	width: 100%;
-	padding-left: 12px;
 	margin: 0px auto;
-	display: inline-block;
-	margin-left: 30px;
 }
+
 .social-icons {
-	text-align: right;
-	margin-top: -100px;
+	float:left;
+	padding:2%;
+}
+
+.payment-accept{
+	padding:2%;
+	float:right;
 }
 .mobile-seting {
 	margin-top: 20px;
