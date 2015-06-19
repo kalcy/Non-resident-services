@@ -94,22 +94,22 @@ $('#title').click(function(e) {
 });
 $('#textarea').click(function(e) {
     $('#textarea').css('border','1px solid #ed6d65');
-	    $('#title').css('border','1px solid #000');
+	    $('#title').css('border','1px solid #cfd2d3');
 	});
 $('#city').click(function(e) {
     $('#city').css('border','1px solid #ed6d65');
-	    $('#textarea').css('border','1px solid #000');
+	    $('#textarea').css('border','1px solid #cfd2d3');
 
 });
 $('#Phone').click(function(e) {
     $('#Phone').css('border','1px solid #ed6d65');
 	    $('#on-click').css('color','#ed6d65');
-			    $('#city').css('border','1px solid #000');
+			    $('#city').css('border','1px solid #cfd2d3');
 
 
 });
 $('#submit').click(function(e) {
-    $('#Phone').css('border','1px solid #000');
+    $('#Phone').css('border','1px solid #cfd2d3');
 });
 });
 
@@ -130,24 +130,22 @@ $('#submit').click(function(e) {
 </div>
 </header>
 <div class="container-modal-box">
-       <h2 style="font-family:gothan bold; color:#494949;">What Would you Like us to 
-Help you with ?</h2><br />
+       <h2 style="font-family:gothan bold; color:#494949;">What would you like us to help you with ?</h2><br />
       <form action="jobs.html">
-           <li style="display:block; font-family:gothan book; color:#494949; text-align:left; "><label for="Short">Short Title</label></li>
-            <input type="text" id="title" name="short" placeholder=" Enter  short title" style="margin-top:5px;padding-left:20px;" class="email" onClick="placeholder='' elase{}" onChange="''" >
-        <li style="display:block; font-family:gothan book; margin-top:15px; color:#494949;"><label for="job discription">Tell Us More about the JOb</label></li>
-           <textarea class="email" id="textarea" style="min-height:200px; margin-top:5px; padding-left:20px;  font-family:gothan book; color:#494949;" placeholder=" Then, Give Brief Description of the Job 
-For us"></textarea>
+           <li style="display:block; font-family:gothan book; color:#494949; text-align:left; "><label for="Short">Job Name</label></li>
+            <input type="text" id="title" name="short" placeholder="Enter job name" style="margin-top:5px;padding-left:5px;" class="email" onClick="placeholder='' elase{}" onChange="''" >
+        <li style="display:block; font-family:gothan book; margin-top:15px; color:#494949;"><label for="job discription">Tell us more about the job</label></li>
+           <textarea class="email" id="textarea" style="min-height:200px; margin-top:5px; padding:5px;  font-family:gothan book; color:#494949;" placeholder="Then, give brief description of the job for us"></textarea>
 <div class="container-new">
          <div class="phone-city">
         <li style="display:block; font-family:gothan book; color:#494949; text-align:left; margin-top:40px;"><label for="Short">City</label></li>
-            <input type="text" id="city" name="short" class="mobile-city" style="margin-top:5px; padding-left:20px;" placeholder=" Now, type the city this would be in"> 
+            <input type="text" id="city" name="short" class="mobile-city" style="margin-top:5px; padding-left:5px;" placeholder="Now, type the city this would be in"> 
             <li style="display:block; font-family:gothan book; color:#494949; text-align:left;" class="mobile-setings"><label for="Short">Phone</label></li>
             <div style="clear:both;"></div>
 		<div class="on-focus clearfix" style="position: relative; ">
         <div class="mobile-input">
           <span class="fa fa-exclamation-circle " style="float:right; margin-left:-40px; padding-right:22px; margin-top:13px; color:#494949;" id="on-click"></span>
-            <input type="text" id="Phone"  name="short" class="mobile" style="margin-top:5px; padding-left:20px;" placeholder=" And your Phone number  With Country code">
+            <input type="text" id="Phone"  name="short" class="mobile" style="margin-top:5px; padding-left:5px;" placeholder="And your phone number with country code">
 			<div class="tool-tip  slideIn">Please enter a valid phone number along with your country code For example +1-123-426-7890 for an American Phone</div>
             </div>
 		</div>
@@ -164,8 +162,7 @@ For us"></textarea>
 <div class="container-new new-one">
  <li style="display:block; font-family:gothan book; color:#494949;"></label></li>
     <button style="float:right;" class="send-button">Send</button><br><br>
-        <p style="font-family:gothan book; font-size:10px; padding-top:10px; width:180px; float:right; display:block;" class="p">
-       What happenes after you hit send ?</p>
+
 
 </div>
  </form>
